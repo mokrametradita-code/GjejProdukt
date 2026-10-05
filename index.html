@@ -4,42 +4,194 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GjejProdukt</title>
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<title>GjejProdukt - Pro Security Golem</title>
 
 <style>
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f7fb;
-color:#151a24;
+  font-family:Arial,sans-serif;
+  background:#f5f7fb;
+  color:#151a24;
 }
 
 header{
-background:#fff;
-border-bottom:1px solid #e5e7eb;
-position:sticky;
-top:0;
-z-index:10;
+  background:#ffffff;
+  border-bottom:1px solid #e5e7eb;
+  position:sticky;
+  top:0;
+  z-index:100;
 }
 
 .nav{
-max-width:1100px;
-margin:auto;
-padding:14px 18px;
-display:flex;
-align-items:center;
-gap:12px;
+  max-width:1100px;
+  margin:auto;
+  padding:14px 18px;
+  display:flex;
+  align-items:center;
+  gap:20px;
 }
 
 .logo{
-font-size:25px;
-font-weight:800;
-color:#1268e8;
-white-space:nowrap;
+  font-size:25px;
+  font-weight:800;
+  color:#1268e8;
+  white-space:nowrap;
 }
 
-.logo
+.search{
+  flex:1;
+}
+
+.search input{
+  width:100%;
+  padding:12px 16px;
+  border:1px solid #d7dce5;
+  border-radius:12px;
+  font-size:15px;
+  outline:none;
+}
+
+.phone{
+  background:#1268e8;
+  color:white;
+  padding:11px 15px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  white-space:nowrap;
+}
+
+.hero{
+  background:linear-gradient(135deg,#1268e8,#0b3d91);
+  color:white;
+  padding:55px 20px;
+}
+
+.hero-content{
+  max-width:1100px;
+  margin:auto;
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:22px;
+}
+
+.whatsapp{
+  display:inline-block;
+  background:#25d366;
+  color:white;
+  text-decoration:none;
+  padding:13px 20px;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 18px;
+}
+
+.categories{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+
+.category{
+  border:0;
+  background:white;
+  padding:12px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:bold;
+  box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+.category:hover{
+  background:#1268e8;
+  color:white;
+}
+
+.title{
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.product{
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+  transition:.2s;
+}
+
+.product:hover{
+  transform:translateY(-3px);
+}
+
+.product-image{
+  height:210px;
+  background:#eef1f5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:70px;
+}
+
+.product-info{
+  padding:16px;
+}
+
+.product h3{
+  font-size:17px;
+  margin-bottom:8px;
+}
+
+.product p{
+  color:#667085;
+  font-size:14px;
+  margin-bottom:12px;
+}
+
+.price{
+  font-size:20px;
+  font-weight:bold;
+  color:#1268e8;
+  margin-bottom:12px;
+}
+
+.order{
+  display:block;
+  text-align:center;
+  background:#25d366;
+  color:white;
+  text-decoration:none;
+  padding:10px;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+footer{
+  margin-top:40px;
+  background:#111827;
+  color:white;
+  padding:35
